@@ -1,2 +1,4 @@
-@extends('adminlte::layouts.landing')
+@extends('layout.business')
+
+<!--adminlte::layouts.landing-->
 
