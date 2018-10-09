@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $layout = 'tasty-master';
+    #$layout = 'coffe-master';
+    #$layout = 'justice';
+    #$layout = 'business';
+    return view('welcome',["layout"=>$layout]);
 });
 
 Route::group(['middleware' => 'auth'], function () {
