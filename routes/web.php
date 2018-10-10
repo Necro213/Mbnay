@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-    $layout = 'tasty-master';
+    #$layout = 'tasty-master';
     #$layout = 'coffe-master';
-    #$layout = 'justice';
+    $layout = 'justice';
     #$layout = 'business';
     return view('welcome',["layout"=>$layout]);
 });
