@@ -16,14 +16,37 @@ Route::get('/', function () {
     #$layout = 'coffe-master';
     $layout = 'justice';
     #$layout = 'business';
+    #return view('welcome',["layout"=>$layout]);
     return view('welcome',["layout"=>$layout]);
 });
 
-Route::group(['middleware' => 'auth'], function () {
-    //    Route::get('/link1', function ()    {
-//        // Uses Auth Middleware
-//    });
-
-    //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
-    #adminlte_routes
+Route::get('/admin',function (){
+    return view('adminlte::layouts.app');
 });
+
+Route::get('/login', function (){
+   return view('vendor.adminlte.auth.login');
+});
+
+Route::post('/dologin',[
+   'uses' => 'UserController@doLogin'
+]);
+
+
+Route::prefix('admin')->group(function (){
+   Route::get('/users',[
+       'uses' => 'ViewsController@getUserForm',
+       'as' => 'admin.users'
+   ]);
+
+   Route::post('/user/register',[
+       'uses' => 'UserController@Registrar'
+   ]);
+
+   Route::get('/user/all',[
+      'uses' => 'UserController@getUsers'
+   ]);
+
+
+});
+

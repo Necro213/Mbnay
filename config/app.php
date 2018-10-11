@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
         /*
          * Package Service Providers...
          */
