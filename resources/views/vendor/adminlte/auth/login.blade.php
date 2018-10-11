@@ -26,29 +26,40 @@
         <div class="login-box-body">
         <p class="login-box-msg"> {{ trans('adminlte_lang::message.siginsession') }} </p>
 
-        <login-form name="{{ config('auth.providers.users.field','email') }}"
-                    domain="{{ config('auth.defaults.domain','') }}"></login-form>
+            <form id="loginForm" style="margin: 5%">
+                <div class="row">
+                    <label for="email">Correo</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="row">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" class="form-control" id="pass" name="pass">
+                </div>
+                <a href="{{ url('/password/reset') }}">{{ trans('adminlte_lang::message.forgotpassword') }}</a><br>
+                <a href="{{ url('/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
+
+            </form>
 
         @include('adminlte::auth.partials.social_login')
 
-        <a href="{{ url('/password/reset') }}">{{ trans('adminlte_lang::message.forgotpassword') }}</a><br>
-        <a href="{{ url('/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
+
+
+            <div align="right">
+                <button class="btn btn-success" id="sesion">Iniciar Sesion</button>
+            </div>
 
     </div>
 
     </div>
     </div>
     @include('adminlte::layouts.partials.scripts_auth')
+    <script src="{{asset('/js/login.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
 
-    <script>
-        $(function () {
-            $('input').iCheck({
-                checkboxClass: 'icheckbox_square-blue',
-                radioClass: 'iradio_square-blue',
-                increaseArea: '20%' // optional
-            });
-        });
-    </script>
 </body>
 
 @endsection
+
+
+
+
