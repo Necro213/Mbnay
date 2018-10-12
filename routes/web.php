@@ -16,7 +16,7 @@ Route::get('/', function () {
     #$layout = 'coffe-master';
     $layout = 'justice';
     #$layout = 'business';
-    return view('welcome',["layout"=>$layout]);
+    return view('blog',["layout"=>$layout]);
 });
 
 Route::group(['middleware' => 'auth'], function () {
@@ -27,3 +27,5 @@ Route::group(['middleware' => 'auth'], function () {
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
 });
+
+Route::post('/AddPost','PostController@AddPost');
