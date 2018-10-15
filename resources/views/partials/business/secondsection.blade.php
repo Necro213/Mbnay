@@ -1,20 +1,18 @@
 <section class="well well2 wow fadeIn  bg1" data-wow-duration='3s'>
     <div class="container">
         <h2 class="txt-pr">
-            wELCOME
+            ¡ BIENVENIDOS
             <small>
-                TO OUR COMPANY!
+                A MONTES BUENO Y ASOCIADOS!
             </small>
         </h2>
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-12 col-sm-12">
                 <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <p>
-                    Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    La Organización está dirigida a Personas Físicas, Morales y Sociedades Independientemente al Giro que realicen.
+
+                    Nuestra razón de ser  es brindar  asesoría a las pequeñas, medianas y grandes empresas en nuestro país en materia fiscal, contable y financiera, es por eso que MONTES BUENO Y ASOCIADOS SC se interesa en ofrecer  los mejores servicios en el Estado Nayarit y Puerto Vallarta, Jalisco, contando con profesionales con una amplia experiencia.
+
                     <a href="#" class="btn-link l-h1 fa-angle-right"></a>
                 </p>
             </div>
