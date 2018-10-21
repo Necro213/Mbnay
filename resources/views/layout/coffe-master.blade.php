@@ -107,6 +107,7 @@
 <script src="{{asset('js/coffe-master/jquery.counterup.min.js')}}"></script>
 <script src="{{asset('js/coffe-master/mail-script.js')}}"></script>
 <script src="{{asset('js/coffe-master/main.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </body>
 </html>
 

@@ -18,4 +18,17 @@ class ViewsController extends Controller
             return view('vendor.adminlte.500');
         }
     }
+
+    public function config(Request $request){
+        try{
+            if($request->cookie('Mbnay-logged') != null){
+                return view('admin.configuracion');
+            }
+            else{
+                return view('vendor.adminlte.auth.login');
+            }
+        }catch (Exception $e){
+            return view('vendor.adminlte.500');
+        }
+    }
 }

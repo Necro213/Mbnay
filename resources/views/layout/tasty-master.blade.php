@@ -149,6 +149,7 @@
 
 <!-- jQuery -->
 <script src="{{asset('js/tasty-master/jquery.min.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <!-- jQuery Easing -->
 <script src="{{asset('js/tasty-master/jquery.easing.1.3.js')}}"></script>
 <!-- Bootstrap -->

@@ -14,13 +14,14 @@ class TemplatesController extends Controller
         #$layout = 'justice';
         $layout = 'business';
         #return view('welcome',["layout"=>$layout]);
-        return view('welcome',["layout"=>$layout]);
+        $logged = true;
+        return view('welcome',["layout"=>$layout, "logged" => $logged]);
     }
     public function page2(){
         #$layout = 'tasty-master';
         #$layout = 'coffe-master';
-        #$layout = 'justice';
-        $layout = 'business';
+        $layout = 'justice';
+        #$layout = 'business';
         #return view('welcome',["layout"=>$layout]);
         return view('page2',["layout"=>$layout]);
     }

@@ -2,17 +2,15 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-2 col-xs-12">
-                <div id="gtco-logo"><a href="index.html">Just<em>ice</em></a></div>
+                <div><a href="index.html"><img src="{{asset("/img/mb/mba.jpg")}}" class="img-responsive" style="width: 120px; height: auto" alt=""></a></div>
             </div>
             <div class="col-xs-10 text-right menu-1 main-nav">
                 <ul>
-                    <li class="active"><a href="#" data-nav-section="home">Home</a></li>
-                    <li><a href="#" data-nav-section="about">About</a></li>
-                    <li><a href="#" data-nav-section="practice-areas">Practice Areas</a></li>
-                    <li><a href="#" data-nav-section="our-team">Our Team</a></li>
-                    <li class="btn-cta"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+                    <li class="active"><a href="{{route('templates.page1')}}" class="external">INICIO</a></li>
+                    <li><a href="{{route('templates.page2')}}" class="external">NOSOTROS</a></li>
+                    <li><a href="{{route('templates.page3')}}" class="external">SERVICIOS</a></li>
+                    <li class="btn-cta"><a href="{{route('templates.page4')}}" class="external"><span>CONTACTANOS</span></a></li>
                     <!-- For external page link -->
-                    <!-- <li><a href="http://freehtml5.co/" class="external">External</a></li> -->
                 </ul>
             </div>
         </div>

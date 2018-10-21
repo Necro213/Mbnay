@@ -2,15 +2,26 @@
     <div class="container top-sect">
         <div class="navbar-header">
             <h1 >
+                @if($logged == true)
                     <img src="{{asset("/img/mb/mba.jpg")}}" class="img-responsive" style="width: 350px; height: auto;" alt="">
+                @else
+                    <img src="{{asset("/img/mb/mba.jpg")}}" class="img-responsive" style="width: 350px; height: auto;" alt="" id="icono">
+                @endif
             </h1>
             <a class="search-form_toggle" href="#"></a>
         </div>
 
         <div class="help-box text-right">
-            <p>¿ Quiere más información?</p>
-            <a href="callto:#">(311) 2141926</a>
-            <small><span>Horario:</span>  9am-6pm  Lunes-Viernes; &nbsp;9am-2pm Sabado</small>
+            @if($logged == true)
+                <p contenteditable="true">¿ Quiere más información?</p>
+                <a href="callto:#" contenteditable="true">@{{ header.telefono }}</a>
+                <small><span>Horario:</span></small><small contenteditable="true">@{{ header.horario }}</small>
+            @else
+                <p>¿ Quiere más información?</p>
+                <a href="callto:#">@{{ header.telefono }}</a>
+                <small><span>Horario:</span>@{{ header.horario }}</small>
+            @endif
+
         </div>
     </div>
 

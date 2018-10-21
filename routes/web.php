@@ -65,6 +65,9 @@ Route::prefix('admin')->group(function (){
       'uses' => 'UserController@getUsers'
    ]);
 
-
+    Route::get('/configuracion',[
+        'uses'=>"ViewsController@config",
+        'as'=>'admin.config'
+    ]);
 });
 

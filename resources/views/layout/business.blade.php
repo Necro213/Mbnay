@@ -18,16 +18,10 @@
     <link rel="stylesheet" href="{{asset('css/business/google-map.css')}}">
 
 
-    <!--JS-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="{{asset('js/business/jquery-migrate-1.2.1.min.js')}}"></script>
-    <script src="{{asset('js/business/rd-smoothscroll.min.js')}}"></script>
 
-    <script src="{{asset('js/business/html5shiv.js')}}"></script>
-    <!--[endif]-->
-    <script src='{{asset('js/business/device.min.js')}}'></script>
 </head>
 <body>
+<div id="app">
 
     <!--========================================================
                               HEADER
@@ -56,13 +50,21 @@
  @include('partials.business.footer')
 
 
-
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="{{asset('js/business/jquery-migrate-1.2.1.min.js')}}"></script>
+<script src="{{asset('js/business/rd-smoothscroll.min.js')}}"></script>
+<script src="{{asset('/plugins/vue.js')}}"></script>
+<script src="{{asset('js/business/html5shiv.js')}}"></script>
+<!--[endif]-->
+<script src='{{asset('js/business/device.min.js')}}'></script>
 <script src="{{asset('js/business/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/business/tm-scripts.js')}}"></script>
 <!-- </script> -->
-
+@yield('scripts')
 
 </body>
 </html>

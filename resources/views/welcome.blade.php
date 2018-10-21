@@ -11,10 +11,18 @@
 
     {{--@include('partials.'.$layout.'.fourthsection')--}}
 
-    @include('partials.'.$layout.'.fifthsection')
+    @if($logged == true)
+
+    @else
+        @include('partials.'.$layout.'.fifthsection')
+    @endif
+
 
 @endsection
 
+@section('scripts')
+    <script src="{{asset('js/page1.js')}}"></script>
+@endsection
 
 
 

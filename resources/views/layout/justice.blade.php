@@ -88,7 +88,7 @@
 <script src="{{asset('js/justice/magnific-popup-options.js')}}"></script>
 <!-- Main -->
 <script src="{{asset('js/justice/main.js')}}"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </body>
 </html>
 

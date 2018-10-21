@@ -5,8 +5,8 @@
             <div class="col-md-12 col-md-offset-0 text-center">
                 <div class="display-t">
                     <div class="display-tc">
-                        <h1 class="animate-box" data-animate-effect="fadeIn">The Greatest Firm You Can Trust</h1>
-                        <p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-controller-play"></i></a></p>
+                        <h1 class="animate-box" data-animate-effect="fadeIn" >MONTES BUENO Y ASOCIADOS</h1>
+                        <p style="color: white;">Asesores Contables y Fiscales</p>
                     </div>
                 </div>
             </div>
