@@ -3,7 +3,7 @@
         <h2 class="txt-pr">
             ¡ BIENVENIDOS
             @if($logged == true)
-                <small contenteditable="true">
+                <small contenteditable="true" id="empresa">
                     @{{ secondsection.empresa }} !
                 </small>
             @else
@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 @if($logged == true)
-                    <p contenteditable="true">
+                    <p contenteditable="true" id="mensaje">
                         @{{ secondsection.mensaje }}
                         <a href="#" class="btn-link l-h1 fa-angle-right"></a>
                     </p>

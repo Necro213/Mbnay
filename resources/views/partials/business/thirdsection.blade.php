@@ -11,7 +11,7 @@
                 <ul class="link-list wow fadeInLeft" data-wow-duration='3s'>
                     <li>
                         @if($logged == true)
-                            <a href="#" contenteditable="true">@{{ thirdsection.servicio1 }}</a>
+                            <a href="#" contenteditable="true" id="srv1">@{{ thirdsection.servicio1 }}</a>
                         @else
                             <a href="#">@{{ thirdsection.servicio1 }}</a>
                         @endif
@@ -21,7 +21,7 @@
                     <li>
 
                         @if($logged == true)
-                            <a href="#" contenteditable="true">@{{ thirdsection.servicio2 }}</a>
+                            <a href="#" contenteditable="true" id="srv2">@{{ thirdsection.servicio2 }}</a>
                         @else
                             <a href="#">@{{ thirdsection.servicio2 }}</a>
                         @endif
@@ -31,7 +31,7 @@
                     <li>
 
                         @if($logged == true)
-                            <a href="#" contenteditable="true">@{{ thirdsection.servicio3 }}</a>
+                            <a href="#" contenteditable="true" id="srv3">@{{ thirdsection.servicio3 }}</a>
                         @else
                             <a href="#">@{{ thirdsection.servicio3 }}</a>
                         @endif
@@ -41,7 +41,7 @@
                     <li>
 
                         @if($logged == true)
-                            <a href="#" contenteditable="true">@{{ thirdsection.servicio4 }}</a>
+                            <a href="#" contenteditable="true" id="srv4">@{{ thirdsection.servicio4 }}</a>
                         @else
                             <a href="#">@{{ thirdsection.servicio4 }}</a>
                         @endif

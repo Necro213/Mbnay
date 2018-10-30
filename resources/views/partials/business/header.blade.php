@@ -14,8 +14,8 @@
         <div class="help-box text-right">
             @if($logged == true)
                 <p contenteditable="true">¿ Quiere más información?</p>
-                <a href="callto:#" contenteditable="true">@{{ header.telefono }}</a>
-                <small><span>Horario:</span></small><small contenteditable="true">@{{ header.horario }}</small>
+                <a href="callto:#" contenteditable="true" v-text="header.telefono" id="telefono"></a>
+                <small><span>Horario:</span></small><small contenteditable="true" id="horario">@{{ header.horario }}</small>
             @else
                 <p>¿ Quiere más información?</p>
                 <a href="callto:#">@{{ header.telefono }}</a>

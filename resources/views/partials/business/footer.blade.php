@@ -7,5 +7,8 @@
                 <!-- {%FOOTER_LINK} -->
             </p>
         </div>
+        <div align="left">
+            <button class="btn btn-warning" v-on:click="actualizar">Actualizar</button>
+        </div>
     </section>
 </footer>

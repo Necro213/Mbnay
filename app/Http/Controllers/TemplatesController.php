@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Principal_page;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 
 class TemplatesController extends Controller
 {
@@ -17,6 +19,13 @@ class TemplatesController extends Controller
         $logged = true;
         return view('welcome',["layout"=>$layout, "logged" => $logged]);
     }
+
+    public function dataPage1(){
+        $config = Principal_page::where('idUsuario',13)->first();
+
+        return Response::json($config);
+    }
+
     public function page2(){
         #$layout = 'tasty-master';
         #$layout = 'coffe-master';

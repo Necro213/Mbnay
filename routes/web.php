@@ -38,6 +38,10 @@ Route::get('/page6', [
     'as'=>'templates.page6'
 ]);
 
+Route::get('/page1/data',[
+    'uses' => 'TemplatesController@dataPage1'
+]);
+
 Route::get('/admin',function (){
     return view('adminlte::layouts.app');
 });
@@ -68,6 +72,10 @@ Route::prefix('admin')->group(function (){
     Route::get('/configuracion',[
         'uses'=>"ViewsController@config",
         'as'=>'admin.config'
+    ]);
+
+    Route::post('/page1/update',[
+        'uses'=>"UserController@actualizar"
     ]);
 });
 

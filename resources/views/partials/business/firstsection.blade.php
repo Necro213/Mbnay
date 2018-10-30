@@ -16,7 +16,7 @@
 
                     <div class="caption bg2">
                         @if($logged == true)
-                            <h3 contenteditable="true">
+                            <h3 contenteditable="true" id="c1title">
                                @{{ firstsection.caption1.title }}
                             </h3>
                         @else
@@ -27,7 +27,7 @@
 
                         <div class="wrap">
                             @if($logged == true)
-                                <p contenteditable="true">
+                                <p contenteditable="true" id="c1content">
                                     @{{ firstsection.caption1.content }}
                                 </p>
                             @else
@@ -56,7 +56,7 @@
                         @endif
                     <div class="caption bg3">
                         @if($logged == true)
-                            <h3 contenteditable="true">
+                            <h3 contenteditable="true" id="c2title">
                                 @{{ firstsection.caption2.title }}
                             </h3>
                         @else
@@ -67,7 +67,7 @@
 
                         <div class="wrap">
                             @if($logged == true)
-                                <p class="thumb_ins1" contenteditable="true">
+                                <p class="thumb_ins1" contenteditable="true" id="c2content">
                                     @{{ firstsection.caption2.content }}
                                 </p>
                             @else
@@ -98,7 +98,7 @@
                     @endif
                     <div class="caption bg3">
                         @if($logged == true)
-                            <h3 contenteditable="true">
+                            <h3 contenteditable="true" id="c3title">
                                 @{{ firstsection.caption3.title }}
                             </h3>
                         @else
@@ -109,7 +109,7 @@
 
                         <div class="wrap">
                             @if($logged == true)
-                                <p contenteditable="true">
+                                <p contenteditable="true" id="c3content">
                                     @{{ firstsection.caption3.content }}
                                 </p>
                             @else
@@ -137,7 +137,7 @@
                     @endif
                     <div class="caption bg-primary">
                         @if($logged == true)
-                            <h3 contenteditable="true">
+                            <h3 contenteditable="true" id="c4title">
                                 @{{ firstsection.caption4.title }}
                             </h3>
                         @else
@@ -148,7 +148,7 @@
 
                         <div class="wrap">
                             @if($logged == true)
-                                <p contenteditable="true">
+                                <p contenteditable="true" id="c4content">
                                     @{{ firstsection.caption4.content }}
                                 </p>
                             @else
@@ -176,7 +176,7 @@
                     @endif
                     <div class="caption bg2">
                         @if($logged == true)
-                            <h3 contenteditable="true">
+                            <h3 contenteditable="true" id="c5title">
                                 @{{ firstsection.caption5.title }}
                             </h3>
                         @else
@@ -187,7 +187,7 @@
 
                         <div class="wrap">
                             @if($logged == true)
-                                <p contenteditable="true">
+                                <p contenteditable="true" id="c5content">
                                     @{{ firstsection.caption5.content }}
                                 </p>
                             @else
